@@ -69,7 +69,6 @@
 	<div class="container">     
 	<form action="{{ isset($data) ? route('employee.update',$data->id_employee) : route('employee.store') }}" method="post" enctype="multipart/form-data">
                 {{ csrf_field() }}
-				
                 <div class="form-group">
                     <label for="nama">Nama:</label>
                     <input type="text" class="form-control" id="usr" name="name" value="{{ isset($data) ? $data->name : '' }}">
@@ -87,7 +86,7 @@
                     <input type="email" class="form-control" id="usr" name="companyEmail" value="{{ isset($data) ? $data->companyEmail : '' }}">
                 </div>
                 <div class="form-group">
-                    <button type="submit" class="btn btn-md btn-primary">Submit</button>
+                    <input type="submit" class="btn btn-md btn-primary" value="Submit">
                     <button type="reset" class="btn btn-md btn-danger">Cancel</button>
                 </div>
             </form>

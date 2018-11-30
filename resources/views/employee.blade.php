@@ -90,7 +90,7 @@
 		@endforeach
 		</tbody>
 		</table>
-		<a href="{{ route('employee.create') }}" class="btn btn-primary">Tambah</a>
+		<a href="employee/create" class="btn btn-primary">Tambah</a>
 	</div>
     </body>
 </html>
